@@ -1,0 +1,134 @@
+span.glyphicon.glyphicon-envelope{
+    font-size: 25px;
+}
+
+.selectedPoll{
+    font-size: 25px;
+}
+
+div.addNewBtnContain{
+    padding: 5px 0;
+    margin: 20px 0 15px 0;
+}
+
+.pollDetailContainer{
+    background: #f2f2f2;
+    background: -webkit-linear-gradient(-90deg, #e6e6e6, #f2f2f2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(-90deg, #e6e6e6, #f2f2f2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(-90deg, #e6e6e6, #f2f2f2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(-90deg, #e6e6e6, #f2f2f2); /* Standard syntax */
+    min-height: 80vh;
+    max-height: 100vh;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+#editableTitle{
+    text-align: center;
+    margin: 25px 0 15px 0;
+}
+
+.titleInput{
+    width: 80%;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    background: #e6e6e6;
+    text-align: center;
+}
+
+.addEditPoll{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.addEditPoll > span{
+    margin-right: 10px;
+}
+
+div.yesStyle{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+div.noStyle{
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+div.dontCare{
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+div.totalStyle{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+div.commentArea{
+    padding: 10px 0 0 30px;
+}
+
+div.commentStyle{
+    margin: 5px;
+    padding: 10px;
+}
+
+div.commentFrame{
+    height: 100px;
+    overflow: auto;
+}
+
+div.commentProfile {
+    float: left;
+}
+
+div.commentProfile_right{
+    float: right;
+}
+
+div.commentProfile > span, div.commentProfile_right > span {
+    font-size: 50px;
+    margin-right: 20px;
+}
+a.commentName {
+    font-size: 18px;
+}
+
+ul.contentsList{
+    list-style-type: none;
+    float: left;
+}
+
+ul.contentsList_right{
+    list-style-type: none;
+    float: right;
+    padding-right: 40px;
+}
+
+hr {
+    border-top: 1px solid #000;
+}
+
+.activeButtonInPollDetail{
+    box-shadow: 6px 8px 26px gray;
+    font-size: 20px;
+}
+

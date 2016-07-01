@@ -1,0 +1,58 @@
+a{
+    cursor: pointer;
+}
+
+.p-d {
+    padding: 20px;
+}
+
+.m-t {
+    margin-top: 20px;
+}
+
+.m-b-xs {
+    margin-bottom: 5px;
+}
+
+.m-r-xs {
+    margin-right: 5px;
+}
+
+.float-right{
+    float: right;
+}
+
+.view-h-100 {
+    min-height: 85vh;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #ddd;
+}
+
+table > tbody > tr > td {
+    vertical-align: middle !important;
+}
+
+table > tbody > tr > td > button {
+    width: 100%;
+}
+
+table.noneBorder tr td{
+    border: none;
+}
+
+td[rowspan]{
+    vertical-align: middle !important;
+    cursor: pointer;
+}
+
+.tdGridWidth_10{
+    width: 10% !important;
+}
+.tdGridWidth_20{
+    width: 20% !important;
+}
+.tdGridWidth_30{
+    width: 30% !important;
+}

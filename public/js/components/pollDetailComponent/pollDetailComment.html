@@ -1,0 +1,21 @@
+<div class="commentArea">
+    <h2>Comments On This Poll</h2>
+    <hr/>
+    <div ng-repeat="comment in $ctrl.poll.comments" class="commentStyle">
+        <div class="commentFrame">
+            <div class="commentProfile">
+                <span class="glyphicon glyphicon-user" ></span>
+                <div><a class="commentName">{{ comment.commentsBy }}</a></div>
+            </div>
+            <ul class="contentsList">
+                <li>
+                    <h4>{{ comment.contents }}</h4>
+                </li>
+                <li>
+                    <span>{{ comment.Date }}</span>
+                    <a data-reply-comments>Reply <i class="fa fa-reply" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

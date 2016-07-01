@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="../node_modules/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="css/generalStyle.css" type="text/css" rel="stylesheet">
+    <link href="css/login_state.css" type="text/css" rel="stylesheet">
+    <link href="css/homepage_state.css" type="text/css" rel="stylesheet">
+    <link href="css/userHomepage.css" type="text/css" rel="stylesheet">
+</head>
+<body ng-app="myApp">
+    <div ui-view>
+    </div>
+
+
+    <!--jQuery base lib-->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+    <script src="js/jQuery_common_functions/commonJqueryOrJavaScript.js"></script>
+    <!--Angular base lib-->
+    <script src="../node_modules/angular/angular.min.js" ></script>
+    <script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--Custom js-->
+    <script src="js/core.js"></script>
+    <script src="js/appRouterConfig/appRouter.js"></script>
+    <!--controllers for root state-->
+    <script src="js/controllers/loginController.js"></script>
+    <script src="js/controllers/publicHallController.js"></script>
+    <script src="js/controllers/userHomePageController.js"></script>
+    <script src="js/controllers/homePageController.js"></script>
+    <script src="js/controllers/myNewNewsController.js"></script>
+    <!--controller for userHomepage-->
+    <script src="js/controllers/userHomePage/myPollsController.js"></script>
+
+    <!--Components for the app-->
+    <script src="js/components/pollDetailComponent/pollDetailComponent.js" ></script>
+    <script src="js/components/pollDetailComponent/pollDetailComment.js"></script>
+    <!--Directives for the app-->
+    <script src="js/directives/myPolls_activeTab.js"></script>
+    <script src="js/directives/navHeaderDirective/navHeader.js"></script>
+    <script src="js/directives/replyComments/replyComments.js"></script>
+    <!--Server for the app-->
+    <script src="js/factoryService/loginService.js"></script>
+    <script src="js/factoryService/myPollService.js"></script>
+</body>
+</html>

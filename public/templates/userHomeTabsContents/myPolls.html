@@ -1,0 +1,73 @@
+<div>
+    <div class="col-lg-3">
+        <div class="addNewBtnContain">
+            <button class="btn btn-danger addEditPoll" data-toggle="modal" data-target="#myModal">
+                <span class="glyphicon glyphicon-plus"></span> Add New Poll
+            </button>
+        </div>
+
+        <ul class="nav nav-pills nav-stacked">
+            <li ng-repeat= " poll in myPollVM.pollList"
+                ng-class="{active: $first}"
+                data-active-tab>
+                <a ng-class="{selectedPoll: $first}"
+                   ng-click="myPollVM.getPollDetail( $index )">{{ poll.title }}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-lg-9 pollDetailContainer">
+        <poll-detail-component poll ="myPollVM.selectedPollDetail"></poll-detail-component>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Create a New Poll</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="Email1">Poll Contents</label>
+                        <textarea type="text" class="form-control" id="Email1"
+                                  placeholder="Poll Text Limited to 200 Characters" ng-model="myPollVM.pollText"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstChoice">First Choice</label>
+                        <select class="form-control" id="firstChoice"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="secondChoice">Second Choice</label>
+                        <select class="form-control" id="secondChoice" ></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="thirdChoice">Third Choice</label>
+                        <select class="form-control" id="thirdChoice"></select>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Use 1 - 10 Scale
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Enforce Action-it Response
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal">Cancel</button>
+
+                <button type="button" class="btn btn-primary"
+                        ng-click="myPollVM.addNewPoll()">Add Poll</button>
+            </div>
+        </div>
+    </div>
+</div>

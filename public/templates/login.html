@@ -1,0 +1,19 @@
+<div  class="login-body">
+    <form id="login-form" name="login_form" class="login-container" ng-submit="vm.login( 'homepage.new' )">
+        <div class="login-label">
+            Login
+        </div>
+        <div class="error-div" ng-show="vm.visible">
+            <span class="login-error">{{vm.errorMsg}}</span>
+        </div>
+        <div>
+            <input class="login-input" type="input" placeholder="Username" ng-model="vm.userName" required>
+        </div>
+        <div>
+            <input class="login-input" type="password" placeholder="Password" ng-model="vm.password" required>
+        </div>
+        <div>
+            <input class="login-input" ng-disabled="login_form.$invalid" type="submit" value="Login">
+        </div>
+    </form>
+</div>

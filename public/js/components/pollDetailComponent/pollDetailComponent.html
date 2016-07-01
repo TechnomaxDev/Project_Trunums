@@ -1,0 +1,59 @@
+<div role="componentContainer" ng-if="$ctrl.poll">
+    <div id="editableTitle" >
+        <span id="" ></span>
+        <input ng-model="$ctrl.poll.title" class="titleInput" readonly="readonly"/>
+    </div>
+
+
+    <table class="table noneBorder" ng-if="$ctrl.poll">
+        <tbody>
+        <tr>
+            <td class="tdGridWidth_10 text-center">{{ $ctrl.poll.yes }}</td>
+            <td class="tdGridWidth_10 text-center">{{ $ctrl.poll.no }}</td>
+            <td class="tdGridWidth_10 text-center">{{ $ctrl.poll.dontCare }}</td>
+            <td class="tdGridWidth_10 text-center">{{ $ctrl.poll.total }}</td>
+            <td rowspan="2" align="center">
+                <span class="glyphicon glyphicon-share"></span>
+            </td>
+            <td rowspan="2" align="center">
+                <button class="btn btn-warning">Action-It</button>
+            </td>
+            <td rowspan="2" align="center">
+                <button class="btn btn-warning">Action-It Response</button>
+            </td>
+            <td rowspan="2" align="center">
+                <button type="button" class="btn btn-info" ng-class="{activeButtonInPollDetail: $ctrl.showComment}" ng-click="$ctrl.openComment()">Comments</button>
+            </td>
+            <td rowspan="2" align="center">
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="yesStyle">Yes</div>
+            </td>
+            <td>
+                <div class="noStyle">No</div>
+            </td>
+            <td>
+                <div class="dontCare">Don't Care</div>
+            </td>
+            <td>
+                <div class="totalStyle">Total</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div ng-if="!$ctrl.showComment">
+        <h1>Text that influence the poll ?? </h1>
+        <br/>
+        <br/>
+        <br/>
+        <h1>Video that influence the poll ?? </h1>
+    </div>
+
+    <poll-detail-comment poll = "$ctrl.poll" ng-if="$ctrl.showComment"></poll-detail-comment>
+</div>
+
+
