@@ -5,6 +5,8 @@ Create a very simple server on nodejs(express).
 
 To start the server, open the cmd or terminal, direct to the project root
 
+do npm install to get the node modules of the project
+
 type in node server.js
 
 Use link http://localhost:8081/#/ in the browser to Open the Application
@@ -17,8 +19,6 @@ After this, the true project landing page will be shown
 
 With same username and password you can login
 
-===========================================================================
-=================For the content of the Project============================
-===========================================================================
+
 
 
